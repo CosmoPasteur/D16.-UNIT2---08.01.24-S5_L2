@@ -393,6 +393,7 @@ footer a {
 /*MOBILE*/
 
 @media  screen and (min-width: 320px) {
+
   header{
     position: sticky; /*sticky permette di "fissare" un elemento in una posizione specifica mentre si scrolla*/
     top: 0; 
@@ -407,7 +408,7 @@ footer a {
     position: relative;
     display: inline-block;
   }
-
+  
   .sottolinea{
     position: absolute;
     left: 0;
@@ -420,35 +421,47 @@ footer a {
     top: -2rem;
     */
   }
-    
+  
   section > h2 {
     width: 8rem;
     position: absolute;
     top: -6%;
     left: 5%;
   }
-
-  .btn2 {
-    /*
-    display: block;
-    margin-bottom: 10px;
-    line-height: ;
-    position: fixed;
-    bottom: 45px;
-    right: 0;
-  }*/
-
-  .upBtn {
+  
+  .up {
     position: fixed;
     bottom: 16px;
     right: 0px;
-
+  
     color: purple;
     opacity: 0.8;
     background-color: #ededed;
   }
-
+  
+  .btn2 {
+    position: fixed;
+    right: 0;
+    bottom: 45px;
+    margin-bottom: 10px;
+    line-height: 1;
+  }
 }
+
+.btn2 > a {
+  display: block;
+  margin-bottom: 5px;
+  opacity: 0.8;
+  background-color: #ededed;
+  color: #3f6bca;
+}
+
+aside div .fa-tag{
+  opacity: 0.2;
+  font-size: 2rem;
+}
+
+
 
 /*MEDIUM - TABLET*/
 @media screen and ( min-width: 480px) {
@@ -476,5 +489,13 @@ footer a {
 
   section{
     height: 267px;
+  }
+
+  aside div .fa-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 4rem;
+    opacity: 0.1;
   }
 }
