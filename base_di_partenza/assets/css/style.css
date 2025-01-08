@@ -226,6 +226,8 @@ iframe {
   }
 }
 
+
+
 /* TABELLE */
 table {
   margin-bottom: 2em;
@@ -384,5 +386,95 @@ footer a {
   .social,
   .toTop {
     display: none;
+  }
+}
+/*ESERCOTAZIONE*/
+
+/*MOBILE*/
+
+@media  screen and (min-width: 320px) {
+  header{
+    position: sticky; /*sticky permette di "fissare" un elemento in una posizione specifica mentre si scrolla*/
+    top: 0; 
+    z-index: 1000; /* Assicura che l'header sia sopra gli altri contenuti */
+  }
+
+  h1{
+    font-size: 1.6rem;
+  }
+
+  h1 span {
+    position: relative;
+    display: inline-block;
+  }
+
+  .sottolinea{
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    right: 0;
+    width: 100%;
+    opacity: 0.5;
+    /*width: 90%;
+    z-index: -1;
+    top: -2rem;
+    */
+  }
+    
+  section > h2 {
+    width: 8rem;
+    position: absolute;
+    top: -6%;
+    left: 5%;
+  }
+
+  .btn2 {
+    /*
+    display: block;
+    margin-bottom: 10px;
+    line-height: ;
+    position: fixed;
+    bottom: 45px;
+    right: 0;
+  }*/
+
+  .upBtn {
+    position: fixed;
+    bottom: 16px;
+    right: 0px;
+
+    color: purple;
+    opacity: 0.8;
+    background-color: #ededed;
+  }
+
+}
+
+/*MEDIUM - TABLET*/
+@media screen and ( min-width: 480px) {
+  /*.span{
+    position: relative;
+    opacity: 0.5;
+    left: 0;
+    z-index: -1;
+    bottom: -10px;
+    right: 0;
+    width: 100%;
+  }*/
+}
+
+/*DESKTOP*/
+
+/*TITOLO SOTTOLINEATO*/
+@media screen and (min-width: 1200px) {
+  /*.sottolinea{
+    position: relative;
+    width: 46%;
+    bottom: 53px;
+    left: 41%;
+  }*/
+
+  section{
+    height: 267px;
   }
 }
